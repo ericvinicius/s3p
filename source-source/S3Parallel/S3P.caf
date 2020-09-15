@@ -254,7 +254,7 @@ class S3P
 
             # removed
             (key, targetValue) ->
-              log "aws s3 rm s3://#{toBucket}/#{key} # you must do this. size: #{humanByteSize targetValue}"
+              # log "aws s3 rm s3://#{toBucket}/#{key} # you must do this. size: #{humanByteSize targetValue}"
               stats.toDeleteBytes += targetValue
               stats.toDeleteFiles++
 
